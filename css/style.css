@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cinzel:wght@600&family=Courgette&family=Lobster&family=Lobster+Two:wght@700&family=Merienda&family=Poppins:wght@300&family=Roboto+Slab&display=swap');
+.content-right .content-items .team {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.league {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.trending-items {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.latest-items {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.teamstats-content{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.standing-items{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.comment-items{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.header .head-content .head-text {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(90deg, blue, #00C9A7);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease;
+    text-decoration: none;
+}
+
+.header .head-content .head-text:hover {
+    background-size: 100% 3px;
+}

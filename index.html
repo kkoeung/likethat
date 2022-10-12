@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like That</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- tailwind link -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <!-- tailwind script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- flowbite link -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-gray-100"> 
+    <secttion class="container overflow-hidden">
+        <!-- header -->
+        <div class="header">
+            <div class="head-content">
+                <ul class="head-items fixed top-0 left-0 z-50 w-full flex flex-row justify-around bg-gray-800 py-5">
+                    <li class="head-item w-3/12 text-center">
+                        <a href=""><span class="head-text-18 text-2xl text-orange-500 font-bold">LIKE<i class="bi bi-cone-striped text-2xl text-blue-600"></i>THAT</span></a>
+                    </li>
+                    <!-- close button -->
+                    <div class="close-button hidden mt-2">
+                        <div class="text-center">
+                            <button class="text-white bg-orange-600 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-left-example"
+                                data-drawer-show="drawer-left-example" data-drawer-placement="left" aria-controls="drawer-left-example">
+                                <i class="bi bi-list text-3xl"></i>
+                            </button>
+                        </div>
+
+                        <!-- drawer component -->
+                        <div id="drawer-left-example" class="fixed z-50 h-screen p-4 overflow-y-auto bg-gray-800 w-80 dark:bg-gray-800 transition-transform left-0 top-0 -translate-x-full" tabindex="-1" aria-labelledby="drawer-left-label" aria-hidden="true">
+                            <span class="text-2xl font-bold text-orange-500">LIKE<i class="bi bi-cone-striped text-2xl text-blue-600"></i>THAT</span>
+                            <button type="button" data-drawer-dismiss="drawer-left-example" aria-controls="drawer-left-example" class="text-gray-400 bg-transparent text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center">
+                                <i class="bi bi-x-lg text-2xl hover:text-red-600 text-orange-500 font-bold"></i>
+                            <span class="sr-only">Close menu</span>
+                            </button>
+                            <ul class="flex flex-col flex-wrap justify-evenly mt-8">
+                                <li class=" menu text-sm text-orange-500 py-4 m-2 font-bold border-b border-orange-600"><a href="#" class="head-text py-2">HOME</a></li>
+                                <li class=" menu text-sm text-orange-500 py-4 m-2 font-bold border-b border-orange-600"><a href="#" class="head-text py-2">ABOUT</a></li>
+                                <li class=" menu text-sm text-orange-500 py-4 m-2 font-bold border-b border-orange-600"><a href="#" class="head-text py-2">FEATURES</a></li>
+                                <li class=" menu text-sm text-orange-500 py-4 m-2 font-bold border-b border-orange-600"><a href="#" class="head-text py-2">TEAM</a></li>
+                                <li class=" menu text-sm text-orange-500 py-4 m-2 font-bold border-b border-orange-600"><a href="#" class="head-text py-2">SHOP</a></li>
+                            </ul>
+
+                            <ul class="container-items flex flex-col">
+                                <li class="menu text-normal text-gray-100 text-center font-bold m-1 py-2 px-6 rounded-xl bg-orange-500"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                                <li class="menu text-normal text-gray-100 text-center font-bold m-1 py-2 px-6 rounded-xl bg-orange-500"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="head-item-2 w-7/12 flex flex-row justify-evenly">
+                        <a href=""><span class="head-text py-2 text-sm text-orange-500 font-bold">HOME</span></a>
+                        <a href=""><span class="head-text py-2 text-sm text-orange-500 font-bold">ABOUT</span></a>
+                        <a href=""><span class="head-text py-2 text-sm text-orange-500 font-bold">FEATURES</span></a>
+                        <a href=""><span class="head-text py-2 text-sm text-orange-500 font-bold">TEAM</span></a>
+                        <a href=""><span class="head-text py-2 text-sm text-orange-500 font-bold">SHOP</span></a>
+                    </li>
+                    <li class="head-item-3 w-2/12 text-center">
+                        <a href="">
+                            <span class="head-login py-2 text-sm text-gray-100 font-bold bg-orange-500 px-4 rounded-md hover:bg-gray-600">LOGIN</span>
+                        </a>
+                        <a href="">
+                            <span class="head-signup py-2 text-sm text-gray-100 font-bold bg-orange-500 px-4 rounded-md hover:bg-gray-600">SIGN UP</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="content flex flex-row max-w-6xl m-auto my-8 mt-20 overflow-hidden">
+            <div class="content-right flex flex-col w-8/12 mx-3">
+                <!-- the league 1 -->
+                <div class="content-items">
+                    <div class=" content-item-1 bg-gray-100 flex flex-row justify-between py-4 border-b border-gray-400">
+                        <div class="flex flex-row">
+                            <div class="border-l-4 border-blue-500 px-2"></div>
+                            <span class="text-xl font-bold text-gray-800">TRENDING NEWS</span>
+                        </div>
+                        <a href="" class="border border-gray-400 rounded hover:bg-blue-400">
+                            <span class="text-xs text-gray-800 font-bold px-4 hover:text-white">ALL NEWS</span>
+                        </a>
+                    </div>
+                    <div class="league bg-white mt-8">
+                        <!-- top -->
+                        <div class="league-top py-3 mx-6">
+                            <span class="league-top-text font-bold text-xs text-gray-600 bg-blue-400 py-1 px-2 rounded">THE LEAGUE</span>
+                            <span class="league-top-text font-bold text-xs text-gray-600 ml-4">APRIL 15, 2022</span>
+                            <span class="league-top-text font-bold text-xs text-gray-600 ml-4">
+                                <i class="bi bi-eye text-md mx-2"></i> 128
+                            </span>
+                        </div>
+                        <!-- mid -->
+                        <div class="league-mid flex flex-col py-3 mx-6">
+                            <a href="">
+                                <span class="py-3 text-xl font-bold text-gray-800 ">PELTON MAILBAG: WHO WAS THE MOST SURPRISING TOP-100 PLAYER THIS YEAR?</span>
+                            </a>
+                            <span class="py-3 text-sm text-gray-600 text-justify">This week's mailbag features your questions on this season's biggest surprise players, LaMarcus Aldridge's defense, lottery teams copying Utah's free-agent strategy and more.</span>
+                        </div>
+                        <!-- under -->
+                        <div class="league-mid py-3">
+                            <div class=" overflow-hidden bg-no-repeat bg-cover">
+                                <img src="./images/post-basketball-1.jpg" class="hover:scale-105 transition duration-500 ease-in-out" alt="Louvre" />
+                            </div>
+                        </div>
+                        <div class="league-under">
+                            <div class="league-under-content flex flex-row justify-between mx-8 py-6">
+                                <!-- right -->
+                                <div class="league-under-items">
+                                    <a href="#">
+                                        <span class="league-under-text">
+                                            <i class="bi bi-chat-left text-sm text-gray-500 mx-1"></i> 
+                                            <span class="league-under-text font-bold text-xs text-gray-500 mx-1">128 COMMENTS</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- left -->
+                                <div class="league-under-items">
+                                    <a href="#">
+                                        <span class="league-under-text font-bold text-xs text-gray-500 px-2">SHARE</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-twitter text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-google text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- the team 1 --> 
+                <div class="content-items bg-white mt-8">
+                    <div class="team flex flex-col">
+                        <div class="team-content flex flex-row mt-6">
+                            <div class="team-items w-8/12">
+                                <!-- top -->
+                                <div class="league-top py-3 mx-8">
+                                    <span class="league-top-text font-bold text-xs text-gray-800 bg-yellow-300 py-1 px-2 rounded">THE TEAM</span>
+                                    <span class="league-top-text font-bold text-xs text-gray-600 ml-4">APRIL 15, 2022</span>
+                                    <span class="league-top-text font-bold text-xs text-gray-600 ml-4">
+                                        <i class="bi bi-eye text-md mx-2"></i> 129
+                                    </span>
+                                </div>
+                                <!-- mid -->
+                                <div class="league-mid flex flex-col py-3 mx-8">
+                                    <a href="">
+                                        <span class="py-3 text-xl font-bold text-gray-800">ISAIAH THOMAS TO LEAVE CELTICS FOR SISTER'S FUNERAL AFTER GAME 6, SAYS BRIAN WINSTON</span>
+                                    </a>
+                                    <span class="py-3 text-sm text-gray-600 text-justify">Boston Celtics point guard Isaiah Thomas was expected to travel home to Tacoma, Washington, after Friday's Game 6.</span>
+                                </div>
+                            </div>
+                            <!-- mid-image -->
+                            <div class="league-mid py-3 w-4/12">
+                                <div class="league-image overflow-hidden bg-no-repeat bg-cover max-w-xs">
+                                    <img src="./images/post-basketball-2.jpg" class="league-image max-w-xs hover:scale-105 transition duration-500 ease-in-out" alt="Louvre" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- under -->
+                        <div class="league-under border-t">
+                            <div class="league-under-content flex flex-row justify-between mx-8 py-6">
+                                <!-- right -->
+                                <div class="league-under-items">
+                                    <a href="#">
+                                        <span class="league-under-text">
+                                            <i class="bi bi-chat-left text-sm text-gray-500 mx-1"></i> 
+                                            <span class="league-under-text font-bold text-xs text-gray-500 mx-1">129 COMMENTS</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- left -->
+                                <div class="league-under-items">
+                                    <a href="#">
+                                        <span class="league-under-text font-bold text-xs text-gray-500 px-2">SHARE</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-twitter text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-google text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- the league 2 -->
+                <div class="content-items bg-white mt-8">
+                    <div class="league">
+                        <!-- top -->
+                        <div class="league-top py-3 mx-6">
+                            <span class="league-top-text font-bold text-xs text-gray-600 bg-blue-400 py-1 px-2 rounded">THE LEAGUE</span>
+                            <span class="league-top-text font-bold text-xs text-gray-600 ml-4">APRIL 15, 2022</span>
+                            <span class="league-top-text font-bold text-xs text-gray-600 ml-4">
+                                <i class="bi bi-eye text-md mx-2"></i> 128
+                            </span>
+                        </div>
+                        <!-- mid -->
+                        <div class="league-mid flex flex-col py-3 mx-6">
+                            <a href="">
+                                <span class="py-3 text-xl font-bold text-gray-800">DEMAR DEROZAN HAD 42 POINTS, AND THE TORONTO RAPTORS SNAPPED AN 11-GAME LOSING STREAK</span>
+                            </a>
+                            <span class="py-3 text-sm text-gray-600 text-justify">DeRozan shot 17-of-38 from the floor and also collected eight assists. Cory Joseph had 19 points for the Raptors, and Serge Ibaka scored 16 before he was ejected for his role in a memorable fight with...</span>
+                        </div>
+                        <!-- under -->
+                        <div class="league-mid py-3">
+                            <div class=" overflow-hidden bg-no-repeat bg-cover">
+                                <img src="./images/post-basketball-3.jpg" class="hover:scale-105 transition duration-500 ease-in-out" alt="Louvre" />
+                            </div>
+                        </div>
+                        <div class="league-under">
+                            <div class="league-under-content flex flex-row justify-between mx-8 py-6">
+                                <!-- right -->
+                                <div class="league-under-items">
+                                    <a href="#">
+                                        <span class="league-under-text">
+                                            <i class="bi bi-chat-left text-sm text-gray-500 mx-1"></i> 
+                                            <span class="league-under-text font-bold text-xs text-gray-500 mx-1">128 COMMENTS</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- left -->
+                                <div class="league-under-items">
+                                    <a href="#">
+                                        <span class="league-under-text font-bold text-xs text-gray-500 px-2">SHARE</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-twitter text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-google text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- the team 2 -->
+                <div class="content-items bg-white mt-8">
+                    <div class="team flex flex-col">
+                        <div class="team-content flex flex-row mt-6">
+                            <div class="team-items w-8/12">
+                                <!-- top -->
+                                <div class="league-top py-3 mx-8">
+                                    <span class="league-top-text font-bold text-xs text-gray-800 bg-yellow-300 py-1 px-2 rounded">THE TEAM</span>
+                                    <span class="league-top-text font-bold text-xs text-gray-600 ml-4">APRIL 15, 2022</span>
+                                    <span class="league-top-text font-bold text-xs text-gray-600 ml-4"> 
+                                        <i class="bi bi-eye text-md mx-2"></i> 129
+                                    </span>
+                                </div>
+                                <!-- mid -->
+                                <div class="league-mid flex flex-col py-3 mx-8">
+                                    <a href="">
+                                        <span class="py-3 text-xl font-bold text-gray-800">REAL OR NOT? GIANTS WILL ROLL AFTER BEATING KERSHAW, RANGERS-ASTROS BAD BLOOD</span>
+                                    </a>
+                                    <span class="py-3 text-sm text-gray-600 text-justify">Some victories are sweeter than others. For the San Francisco Giants, beating Clayton Kershaw 4-3 at Dodger...</span>
+                                </div>
+                            </div>
+                            <!-- mid-image -->
+                            <div class="league-mid py-3 w-4/12">
+                                <div class=" overflow-hidden bg-no-repeat bg-cover max-w-xs">
+                                    <img src="./images/post-basketball-4.jpg" class="max-w-xs hover:scale-105 transition duration-500 ease-in-out" alt="Louvre" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- under -->
+                        <div class="league-under border-t">
+                            <div class="league-under-content flex flex-row justify-between mx-8 py-6">
+                                <!-- right -->
+                                <div class="league-under-items">
+                                    <a href="#">
+                                        <span class="league-under-text">
+                                            <i class="bi bi-chat-left text-sm text-gray-500 mx-1"></i> 
+                                            <span class="league-under-text font-bold text-xs text-gray-500 mx-1">129 COMMENTS</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- left -->
+                                <div class="league-under-items">
+                                    <a href="#">
+                                        <span class="league-under-text font-bold text-xs text-gray-500 px-2">SHARE</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-twitter text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-google text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-sm text-gray-500 px-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider video -->
+                <div class="video mt-8">
+                    <div class="video-content flex flex-row justify-between py-4 border-b">
+                        <div class="video-item flex flex-row">
+                            <div class="border-l-4 border-blue-500 px-2"></div>
+                            <span class="text-xl font-bold text-gray-800">LATEST VIDEOS</span>
+                        </div>
+                        <div class="">
+                            <i class="bi bi-hand-thumbs-up-fill text-xl text-gray-600 hover:text-blue-700 p-2"></i>
+                            <i class="bi bi-hand-thumbs-down-fill text-xl text-gray-600 hover:text-blue-700 p-2"></i>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper mt-8">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <iframe width="853" height="480" src="https://www.youtube.com/embed/CXLM08fZO5o" title="NBA Epic Moments" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <iframe width="853" height="480" src="https://www.youtube.com/embed/2wLZyh0HnVM" title="Most Jaw-Dropping NBA Moments of 2021/2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe width="853" height="480" src="https://www.youtube.com/embed/0cJza_uvL8g" title="Best Dunkers In NBA HISTORY!!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <!-- TRENDING -->
+                <div class="trending flex flex-col justify-between mt-8">
+                    <div class="trending-content-1 flex flex-row justify-between py-4 border-b">
+                        <div class="trending-item flex flex-row">
+                            <div class="border-l-4 border-blue-500 px-2"></div>
+                            <span class="text-xl font-bold text-gray-800">TRENDING NEWS</span>
+                        </div>
+                        <a href="" class="border border-gray-400 rounded hover:bg-blue-400">
+                            <span class="text-xs text-gray-800 font-bold px-4 hover:text-white">ALL NEWS</span>
+                        </a>
+                    </div>
+                    <div class="trending-content flex flex-row justify-between mt-4">
+                        <div class="trending-items bg-white mt-4 w-3/6">
+                            <div class="league-top py-3 mx-6 mt-4">
+                                <span class="league-top-text font-bold text-xs text-gray-800 bg-yellow-400 py-1 px-2 rounded">THE LEAGUE</span>
+                                <span class="league-top-text font-bold text-xs text-gray-600 ml-4">APRIL 15, 2022</span>
+                                <span class="league-top-text font-bold text-xs text-gray-600 ml-4">
+                                    <i class="bi bi-eye text-md mx-2"></i> 128
+                                </span>
+                            </div>
+                            <!-- mid -->
+                            <div class="trending-mid flex flex-col py-3 mx-6">
+                                <a href="">
+                                    <span class="py-3 text-xl font-bold text-gray-800">FORECAST: PREDICTIONS FOR EACH CONFERENCE SEMIFINAL SERIES</span>
+                                </a>
+                            </div>
+                            <!-- under -->
+                            <div class="trending-mid-2 py-3">
+                                <div class=" overflow-hidden bg-no-repeat bg-cover">
+                                    <img src="./images/post-basketball-5.jpg" class="hover:scale-105 transition duration-500 ease-in-out" alt="Louvre" />
+                                </div>
+                            </div>
+                            <div class="trending-under">
+                                <div class="trending-under-content flex flex-row justify-between mx-8 py-6">
+                                    <!-- right -->
+                                    <div class="league-under-items">
+                                        <a href="#">
+                                            <span class="league-under-text">
+                                                <i class="bi bi-chat-left text-sm text-gray-500 mx-1"></i> 
+                                                <span class="league-under-text font-bold text-xs text-gray-500 mx-1">128 COMMENTS</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- left -->
+                                    <div class="league-under-items">
+                                        <a href="#">
+                                            <span class="league-under-text font-bold text-xs text-gray-500 px-2">SHARE</span>
+                                        </a>
+                                        <a href="#">
+                                            <i class="bi bi-share-fill text-gray-500"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" w-8"></div>
+                        <!-- left -->
+                        <div class="trending-items-lefts flex flex-col w-3/6">
+                            <div class="trending-items-left bg-white m-auto mt-4">
+                                <div class="league-top py-3 mx-6 mt-4">
+                                    <span class="league-top-text font-bold text-xs text-gray-800 bg-blue-400 py-1 px-2 rounded">TOURNAMENT</span>
+                                    <span class="league-top-text font-bold text-xs text-gray-600 ml-4">APRIL 15, 2022</span>
+                                    <span class="league-top-text font-bold text-xs text-gray-600 ml-4">
+                                        <i class="bi bi-eye text-md mx-2"></i> 128
+                                    </span>
+                                </div>
+                                <!-- mid -->
+                                <div class="league-mid flex flex-col py-3 mx-6">
+                                    <a href="">
+                                        <span class="py-3 text-xl font-bold text-justify text-gray-800">ROUND 2 PREDICTIONS: EXPERTS' PICKS FOR THE CONFERENCE SEMIFINALS</span>
+                                    </a>
+                                </div>
+                                <!-- under -->
+                                <div class="trending-under border-t mt-4">
+                                    <div class="trending-under-content flex flex-row justify-between mx-8 py-6">
+                                        <!-- right -->
+                                        <div class="trending-under-items">
+                                            <a href="#">
+                                                <span class="trending-under-text">
+                                                    <i class="bi bi-chat-left text-sm text-gray-500 mx-1"></i> 
+                                                    <span class="trending-under-text font-bold text-xs text-gray-500 mx-1">128 COMMENTS</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!-- left -->
+                                        <div class="trending-under-items">
+                                            <a href="#">
+                                                <span class="trending-under-text font-bold text-xs text-gray-500 px-2">SHARE</span>
+                                            </a>
+                                            <a href="#">
+                                                <i class="bi bi-share-fill text-gray-500"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="trending-items-left bg-white m-auto">
+                                <div class="trending-top py-3 mx-6 mt-4">
+                                    <span class="trending-top-text font-bold text-xs text-gray-800 bg-yellow-400 py-1 px-2 rounded">THE LEAGUE</span>
+                                    <span class="trending-top-text font-bold text-xs text-gray-600 ml-4">APRIL 15, 2022</span>
+                                    <span class="trending-top-text font-bold text-xs text-gray-600 ml-4">
+                                        <i class="bi bi-eye text-md mx-2"></i> 128
+                                    </span>
+                                </div>
+                                <!-- mid -->
+                                <div class="trending-mid flex flex-col py-3 mx-6">
+                                    <a href="">
+                                        <span class="py-3 text-xl font-bold text-gray-800">VOTE: PICK THE WINNERS IN THE NBA CONFERENCE SEMIFINALS</span>
+                                    </a>
+                                </div>
+                                <!-- under -->
+                                <div class="trending-under border-t mt-4">
+                                    <div class="trending-under-content flex flex-row justify-between mx-8 py-6">
+                                        <!-- right -->
+                                        <div class="trending-under-items">
+                                            <a href="#">
+                                                <span class="trending-under-text">
+                                                    <i class="bi bi-chat-left text-sm text-gray-500 mx-1"></i> 
+                                                    <span class="trending-under-text font-bold text-xs text-gray-500 mx-1">128 COMMENTS</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!-- left -->
+                                        <div class="trending-under-items">
+                                            <a href="#">
+                                                <span class="trending-under-text font-bold text-xs text-gray-500 px-2">SHARE</span>
+                                            </a>
+                                            <a href="#">
+                                                <i class="bi bi-share-fill text-gray-500"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TRENDING-2 -->
+                <div class="trending-2 flex flex-row justify-between mt-8">
+                    <div class="trending-2-content flex flex-row justify-between">
+                        <div class="trending-2-items bg-white flex flex-col mt-4 w-3/6">
+                            <div class="trending-2-top py-3 mx-6 mt-4 h-1/4">
+                                <span class="trending-2-top-text font-bold text-xs text-gray-800 bg-yellow-400 py-1 px-2 rounded">THE TEAM</span>
+                                <span class="trending-2-top-text font-bold text-xs text-gray-600 ml-4">APRIL 15, 2022</span>
+                                <span class="trending-2-top-text font-bold text-xs text-gray-600 ml-4">
+                                    <i class="bi bi-eye text-md mx-2"></i> 128
+                                </span>
+                            </div>
+                            <!-- mid -->
+                            <div class="trending-2-mid flex flex-col py-3 mx-6 h-2/12">
+                                <a href="">
+                                    <span class="py-3 text-xl font-bold text-gray-800">SIX BIG QUESTIONS FOR THE SPURS-ROCKETS HEAVYWEIGHT CLASH</span>
+                                </a>
+                            </div>
+                            <!-- under -->
+                            <div class="trending-2-mid py-3 h-6/12">
+                                <div class=" overflow-hidden bg-no-repeat bg-cover">
+                                    <img src="./images/post-basketball-6.jpg" class="hover:scale-105 transition duration-500 ease-in-out" alt="Louvre" />
+                                </div>
+                            </div>
+                            <div class="trending-2-under h-2\/4/12">
+                                <div class="trending-2-under-content flex flex-row justify-between mx-8 py-6">
+                                    <!-- right -->
+                                    <div class="trending-2-under-items">
+                                        <a href="#">
+                                            <span class="trending-2-under-text">
+                                                <i class="bi bi-chat-left text-sm text-gray-500 mx-1"></i> 
+                                                <span class="trending-2-under-text font-bold text-xs text-gray-500 mx-1">128 COMMENTS</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- left -->
+                                    <div class="trending-2-under-items">
+                                        <a href="#">
+                                            <span class="trending-2-under-text font-bold text-xs text-gray-500 px-2">SHARE</span>
+                                        </a>
+                                        <a href="#">
+                                            <i class="bi bi-share-fill text-gray-500"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" w-8"></div>
+                        <!-- left -->
+                        <div class="trending-2-items bg-white mt-4 w-3/6">
+                            <div class="trending-2-top py-3 mx-6 mt-4 h-2/12">
+                                <span class="trending-2-top-text font-bold text-xs text-gray-800 bg-blue-400 py-1 px-2 rounded">THE LEAGUE</span>
+                                <span class="trending-2-top-text font-bold text-xs text-gray-600 ml-4">APRIL 15, 2022</span>
+                                <span class="trending-2-top-text font-bold text-xs text-gray-600 ml-4">
+                                    <i class="bi bi-eye text-md mx-2"></i>128
+                                </span>
+                            </div>
+                            <!-- mid -->
+                            <div class="trending-2-mid flex flex-col py-3 mx-6 h-2/12">
+                                <a href="">
+                                    <span class="py-3 text-xl font-bold text-gray-800">WHICH TEAM WILL WIN THE WORLD CHAMPIONSHIP SERIES...?</span>
+                                </a>
+                            </div>
+                            <!-- under -->
+                            <div class="trending-2-mid py-3 h-6/12">
+                                <div class=" overflow-hidden bg-no-repeat bg-cover">
+                                    <img src="./images/post-basketball-7.jpg" class="hover:scale-105 transition duration-500 ease-in-out" alt="Louvre" />
+                                </div>
+                            </div>
+                            <div class="trending-2-under h-2/12">
+                                <div class="trending-2-under-content flex flex-row justify-between mx-8 py-6">
+                                    <!-- right -->
+                                    <div class="trending-2-under-items">
+                                        <a href="#">
+                                            <span class="trending-2-under-text">
+                                                <i class="bi bi-chat-left text-sm text-gray-500 mx-1"></i> 
+                                                <span class="trending-2-under-text font-bold text-xs text-gray-500 mx-1">128 COMMENTS</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- left -->
+                                    <div class="trending-2-under-items">
+                                        <a href="#">
+                                            <span class="trending-2-under-text font-bold text-xs text-gray-500 px-2">SHARE</span>
+                                        </a>
+                                        <a href="#">
+                                            <i class="bi bi-share-fill text-gray-500"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- ============================ -->
+            <!-- left -->
+            <div class="content-left w-4/12 bg-gray-100 mx-3">
+                <div class="content-left-itmes">
+                    <div class="content-left-item">
+                        <!-- hotnew -->
+                        <div class="hotnew">
+                            <div class="bg-gray-100 flex flex-row justify-between py-4 border-b border-gray-400">
+                                <div class="flex flex-row">
+                                    <div class="border-l-4 border-blue-500 px-2"></div>
+                                    <span class="text-xl font-bold text-gray-800"><i class="bi bi-funnel-fill text-orange-600 mx-2"></i>HOT NEWS</span>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="hotnew-content mt-8">
+                                <div class="hotnew-items flex flex-col">
+                                    <div class="hotnew-item py-4 px-8 border bg-white hover:bg-gray-100">
+                                        <div class="hotnew-text flex flex-col">
+                                            <span class="text-xs font-bold text-gray-500 py-4">4 HOURS AGO</span>
+                                            <a href="">
+                                                <span class="text-sm text-gray-800 font-bold hover:text-blue-500">5-ON-5: WHAT MOVES DO BUCKS MAKE TO BUILD CONTENDER AROUND GIANNIS?</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="hotnew-item py-4 px-8 border bg-white hover:bg-gray-100">
+                                        <div class="hotnew-text flex flex-col">
+                                            <span class="text-xs font-bold text-gray-500 py-4">15 HOURS AGO</span>
+                                            <a href="">
+                                                <span class="text-sm text-gray-800 font-bold hover:text-blue-500">RAPTORS SNAP 11-GAME LOSING STREAK AGAINST BULLS WITH 122-120 WIN</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="hotnew-item py-4 px-8 border bg-white hover:bg-gray-100">
+                                        <div class="hotnew-text flex flex-col">
+                                            <span class="text-xs font-bold text-gray-500 py-4">1 DAY AGO</span>
+                                            <a href="">
+                                                <span class="text-sm text-gray-800 font-bold hover:text-blue-500">WIZARDS CLOSE OUT THE HAWKS, FACE TOUGHER TEST IN THE CELTICS</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="hotnew-item py-4 px-8 border bg-white hover:bg-gray-100">
+                                        <div class="hotnew-text flex flex-col">
+                                            <span class="text-xs font-bold text-gray-500 py-4">2 DAY AGO</span>
+                                            <a href="">
+                                                <span class="text-sm text-gray-800 font-bold hover:text-blue-500">NBA LOCKDOWN: BULLS MISS CHANCES. CONCERN OVER LEBRON'S MINUTES?</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- latest -->
+                        <div class="latest mt-8">
+                            <div class="latest-content">
+                                <div class="latest-items.">
+                                    <div class="bg-gray-100 flex flex-row justify-between py-4 border-b border-gray-400">
+                                        <div class="flex flex-row">
+                                            <div class="border-l-4 border-blue-500 px-2"></div>
+                                            <span class="text-xl font-bold text-gray-800">HOT NEWS</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- 1 -->
+                                <div class="latest-items mt-8 bg-white">
+                                    <div class="latest-item py-6 px-4 flex flex-row justify-around items-center">
+                                        <div class="latest-img">
+                                            <div class="border p-4">
+                                                <img src="./images/team-athletic-1.png ">
+                                            </div>
+                                            <div class="text-center">
+                                                <span class="mt-4 text-xs font-bold text-gray-800">ATHLETIC <br><span>
+                                                <span class="text-xs font-bold text-gray-500">NEW YORK <span>
+                                            </div>
+                                        </div>
+                                        <div class="latest-img flex flex-col">
+                                            <div class="text-right">
+                                                <span class="text-xs font-bold text-gray-700 bg-blue-400 py-0.5 px-2 rounded">WIN<span>
+                                            </div>
+                                            <div class="">
+                                                <span class="text-xl font-bold text-gray-700">105 : 99<span>
+                                            </div>
+                                            <div class="text-center">
+                                                <span class="text-xs font-bold text-gray-700">HOME<span>
+                                            </div>
+                                        </div>
+                                        <div class="latest-img">
+                                            <div class="border p-4">
+                                                <img src="./images/team-dragons-2.png">
+                                            </div>
+                                            <div class="text-center">
+                                                <span class="mt-4 text-xs font-bold text-gray-800">ATHLETIC <br> <span>
+                                                <span class="text-xs font-bold text-gray-500">NEW YORK <span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2 border-t border-gray-300 text-center">
+                                        <span class="text-gray-500 text-xs font-bold">NEW YORKERS STADIUM  APRIL 14, 2022</span>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="latest-items mt-8 bg-white">
+                                    <div class="latest-item py-6 px-4 flex flex-row justify-around items-center">
+                                        <div class="latest-img">
+                                            <div class="border p-4">
+                                                <img src="./images/team-dragons-2.png">
+                                            </div>
+                                            <div class="text-center">
+                                                <span class="mt-4 text-xs font-bold text-gray-800">DRAGONS <br><span>
+                                                <span class="text-xs font-bold text-gray-500">BOSTON<span>
+                                            </div>
+                                        </div>
+                                        <div class="latest-img flex flex-col">
+                                            <div class="text-right">
+                                                <span class="text-xs font-bold text-gray-700 bg-blue-400 py-0.5 px-2 rounded">WIN<span>
+                                            </div>
+                                            <div class="">
+                                                <span class="text-xl font-bold text-gray-700">105 : 128<span>
+                                            </div>
+                                            <div class="text-center">
+                                                <span class="text-xs font-bold text-gray-700">WAY<span>
+                                            </div>
+                                        </div>
+                                        <div class="latest-img">
+                                            <div class="border p-4">
+                                                <img src="./images/team-rockets-3.png">
+                                            </div>
+                                            <div class="text-center">
+                                                <span class="mt-4 text-xs font-bold text-gray-800">ROCKETS <br> <span>
+                                                <span class="text-xs font-bold text-gray-500">HOUSTON<span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2 border-t border-gray-300 text-center">
+                                        <span class="text-gray-500 text-xs font-bold">DUBAY STADIUM  APRIL 14, 2022</span>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="latest-items mt-8 bg-white">
+                                    <div class="latest-item py-6 px-4 flex flex-row justify-around items-center">
+                                        <div class="latest-img">
+                                            <div class="border p-4">
+                                                <img src="./images/team-bulls-4.png ">
+                                            </div>
+                                            <div class="text-center">
+                                                <span class="mt-4 text-xs font-bold text-gray-800">BULLS <br><span>
+                                                <span class="text-xs font-bold text-gray-500">CHICAGO<span>
+                                            </div>
+                                        </div>
+                                        <div class="latest-img flex flex-col">
+                                            <div class="text-right">
+                                                <span class="text-xs font-bold text-gray-700 bg-blue-400 py-0.5 px-2 rounded">WIN<span>
+                                            </div>
+                                            <div class="">
+                                                <span class="text-xl font-bold text-gray-700">105 : 199<span>
+                                            </div>
+                                            <div class="text-center">
+                                                <span class="text-xs font-bold text-gray-700">HOME<span>
+                                            </div>
+                                        </div>
+                                        <div class="latest-img">
+                                            <div class="border p-4">
+                                                <img src="./images/team-dragons-2.png">
+                                            </div>
+                                            <div class="text-center">
+                                                <span class="mt-4 text-xs font-bold text-gray-800">DRAGONS <br> <span>
+                                                <span class="text-xs font-bold text-gray-500">BOSTON <span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2 border-t border-gray-300 text-center">
+                                        <span class="text-gray-500 text-xs font-bold">NEW YORKERS STADIUM  APRIL 14, 2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- social medea -->
+                        <div class="social mt-8">
+                            <div class="social-content">
+                                <div class="social-item">
+                                    <div class="bg-gray-100 flex flex-row justify-between py-4 border-b border-gray-400">
+                                        <div class="flex flex-row">
+                                            <div class="border-l-4 border-blue-500 px-2"></div>
+                                            <span class="text-xl font-bold text-gray-800">SOCIAL MEDIA</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="social-item mt-4">
+                                    <div class="social-button flex flex-row">
+                                        <a href class="social-click flex-row py-8 m-2 bg-blue-400 hover:bg-gray-400 rounded w-2/4">
+                                            <i class="bi bi-facebook text-xl mx-3 text-gray-200"></i>
+                                            <span class="text-gray-100 text-sm font-bold">LIKE US</span>
+                                        </a>
+                                        <a href class="social-click flex-row py-8 m-2 bg-orange-400 hover:bg-gray-400 rounded w-2/4">
+                                            <i class="bi bi-twitter text-xl mx-3 text-gray-200"></i>
+                                            <span class="text-gray-100 text-sm font-bold">FOLLOW US</span>
+                                        </a>
+                                    </div>
+                                    <div class="social-button flex flex-row">
+                                        <a href class="social-click flex-row py-8 m-2 bg-red-400 hover:bg-gray-400 rounded w-2/4">
+                                            <i class="bi bi-instagram text-xl mx-3 text-gray-200"></i>
+                                            <span class="text-gray-100 text-sm font-bold">FOLLOW US</span>
+                                        </a>
+                                        <a href class="social-click flex-row py-8 m-2 bg-purple-400 hover:bg-gray-400 rounded w-2/4">
+                                            <i class="bi bi-google text-xl mx-3 text-gray-200"></i>
+                                            <span class="text-gray-100 text-sm font-bold">FOLLOW US</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- gallery -->
+                        <div class="gallery mt-4">
+                            <div class="gallery-item">
+                                <div class="bg-gray-100 flex flex-row justify-between py-4 border-b border-gray-400">
+                                    <div class="flex flex-row">
+                                        <div class="border-l-4 border-blue-500 px-2"></div>
+                                        <span class="text-xl font-bold text-gray-800">SOCIAL MEDIA</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery-content flex flex-col mt-4">
+                                <div class="gallery-items flex flex-row">
+                                    <div class="m-1">
+                                        <img src="./images/gallery-1.jpg">
+                                    </div>
+                                    <div class="m-1">
+                                        <img src="./images/gallery-2.jpg">
+                                    </div>
+                                    <div class="m-1">
+                                        <img src="./images/gallery-3.jpg">
+                                    </div>
+                                </div>
+                                <div class="gallery-items flex flex-row">
+                                    <div class="m-1">
+                                        <img src="./images/gallery-4.jpg">
+                                    </div>
+                                    <div class="m-1">
+                                        <img src="./images/gallery-5.jpg">
+                                    </div>
+                                    <div class="m-1">
+                                        <img src="./images/gallery-6.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- team stats -->
+                        <div class="teamstats mt-8">
+                            <div class="bg-gray-100 flex flex-row justify-between py-4 border-b border-gray-400">
+                                <div class="flex flex-row">
+                                    <div class="border-l-4 border-blue-500 px-2"></div>
+                                    <span class="text-xl font-bold text-gray-800">SOCIAL MEDIA</span>
+                                </div>
+                            </div>
+                            <div class="teamstats-content mt-6">
+                                <div class="teamstats-items flex flex-row">
+                                    <div class="temstats-item flex flex-col border py-8 text-center bg-white w-2/4">
+                                        <span class="text-4xl text-gray-800">109</span>
+                                        <span class="text-xs font-bold mt-1 text-gray-400">POINTS PER GAME</span>
+                                    </div>
+                                    <div class="temstats-item flex flex-col border py-8 text-center bg-white w-2/4">
+                                        <span class="text-4xl text-gray-800">58</span>
+                                        <span class="text-xs font-bold mt-1 text-gray-400">REBOUNDS PER GAME</span>
+                                    </div>
+                                </div>
+                                <div class="teamstats-items flex flex-row">
+                                    <div class="temstats-item flex flex-col border py-8 text-center bg-white w-2/4">
+                                        <span class="text-4xl text-gray-800">68.28</span>
+                                        <span class="text-xs font-bold mt-1 text-gray-400">ASSISTS PER GAME</span>
+                                    </div>
+                                    <div class="temstats-item flex flex-col border py-8 text-center bg-white w-2/4">
+                                        <span class="text-4xl text-gray-800">108</span>
+                                        <span class="text-xs font-bold mt-1 text-gray-400">POINTS ALLOWED</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- standings -->
+                        <div class="standing mt-8">
+                            <div class="bg-gray-100 flex flex-row justify-between py-4 border-b border-gray-400">
+                                <div class="flex flex-row">
+                                    <div class="border-l-4 border-blue-500 px-2"></div>
+                                    <span class="text-md font-bold text-gray-800">TRENDING NEWS</span>
+                                </div>
+                                <a href="" class="border border-gray-400 rounded hover:bg-blue-400">
+                                    <span class="text-xs text-gray-800 font-bold px-4 hover:text-white">FULL STANDINGS</span>
+                                </a>
+                            </div>
+
+                            <div class="standing-content mt-6">
+                                <div class="standing-items border">
+                                    <div class="standing-item flex flex-row px-4 py-4 bg-blue-500 border">
+                                        <div class="w-6/12 text-sm text-gray-100 font-bold">TEAM POSITION</div>
+                                        <div class="w-2/12 text-sm text-right font-bold text-gray-100">W</div>
+                                        <div class="w-2/12 text-sm text-right font-bold text-gray-100">L</div>
+                                        <div class="w-2/12 text-sm text-right font-bold text-gray-100">PTS</div>
+                                    </div>
+                                    <!-- 1 -->
+                                    <a href="" class="standing-item flex flex-row px-4 py-4 border bg-white hover:bg-gray-2  00 hover:bg-gray-50">
+                                        <div class="w-1/12">1</div>
+                                        <div class="w-2/12"><img src="./images/team-dragons-2.png" class="w-10"></div>
+                                        <div class="w-3/12 text-xs text-center font-bold">DRAGONS<br><span class="text-gray-500">BOSTON</span></div>
+                                        <div class="w-2/12 text-sm text-right">128</div>
+                                        <div class="w-2/12 text-sm text-right">28</div>
+                                        <div class="w-2/12 text-sm text-right">168</div>
+                                    </a>
+                                    <!-- 2 -->
+                                    <a href="" class="standing-item flex flex-row px-4 py-4 border bg-white hover:bg-gray-2  00 hover:bg-gray-50">
+                                        <div class="w-1/12">2</div>
+                                        <div class="w-2/12"><img src="./images/team-bulls-4.png" class="w-10"></div>
+                                        <div class="w-3/12 text-xs text-center font-bold">BULLS<br><span class="text-gray-500">CHICAGO</span></div>
+                                        <div class="w-2/12 text-sm text-right">128</div>
+                                        <div class="w-2/12 text-sm text-right">28</div>
+                                        <div class="w-2/12 text-sm text-right">168</div>
+                                    </a>
+                                    <!-- 3 -->
+                                    <a href="" class="standing-item flex flex-row px-4 py-4 border bg-white hover:bg-gray-2  00 hover:bg-gray-50">
+                                        <div class="w-1/12">3</div>
+                                        <div class="w-2/12"><img src="./images/team-rockets-3.png" class="w-10"></div>
+                                        <div class="w-3/12 text-xs text-center font-bold">ROCKETS<br><span class="text-gray-500">HOUSTON</span></div>
+                                        <div class="w-2/12 text-sm text-right">101</div>
+                                        <div class="w-2/12 text-sm text-right">30</div>
+                                        <div class="w-2/12 text-sm text-right">180</div>
+                                    </a>
+                                    <!-- 4 -->
+                                    <a href="" class="standing-item flex flex-row px-4 py-4 border bg-white hover:bg-gray-2  00 hover:bg-gray-50">
+                                        <div class="w-1/12">4</div>
+                                        <div class="w-2/12"><img src="./images/team-athletic-1.png" class="w-10"></div>
+                                        <div class="w-3/12 text-xs text-center font-bold">ATHLETIC<br><span class="text-gray-500">NEW YORK</span></div>
+                                        <div class="w-2/12 text-sm text-right">89</div>
+                                        <div class="w-2/12 text-sm text-right">55</div>
+                                        <div class="w-2/12 text-sm text-right">148</div>
+                                    </a>
+                                    <!-- 5 -->
+                                    <a href="" class="standing-item flex flex-row px-4 py-4 border bg-white hover:bg-gray-2  00 hover:bg-gray-50">
+                                        <div class="w-1/12">5</div>
+                                        <div class="w-2/12"><img src="./images/team-hawks-5.png" class="w-10"></div>
+                                        <div class="w-3/12 text-xs text-center font-bold">HAWKS<br><span class="text-gray-500">ATLANTA</span></div>
+                                        <div class="w-2/12 text-sm text-right">98</div>
+                                        <div class="w-2/12 text-sm text-right">68</div>
+                                        <div class="w-2/12 text-sm text-right">18</div>
+                                    </a>
+                                    <!-- 5 -->
+                                    <a href="" class="standing-item flex flex-row px-4 py-4 border bg-white hover:bg-gray-2  00 hover:bg-gray-50">
+                                        <div class="w-1/12">6</div>
+                                        <div class="w-2/12"><img src="./images/team-piranha-6.png" class="w-10"></div>
+                                        <div class="w-3/12 text-xs text-center font-bold">PIRANHA<br><span class="text-gray-500">CAMBODIA</span></div>
+                                        <div class="w-2/12 text-sm text-right">28</div>
+                                        <div class="w-2/12 text-sm text-right">168</div>
+                                        <div class="w-2/12 text-sm text-right">48</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- comment -->
+                        <div class="comment mt-8">
+                            <div class="comment-content">
+                                <div class="comment-items.">
+                                    <div class="bg-gray-100 flex flex-row justify-between py-4 border-b border-gray-400">
+                                        <div class="flex flex-row">
+                                            <div class="border-l-4 border-blue-500 px-2"></div>
+                                            <span class="text-xl font-bold text-gray-800">HOT NEWS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-items border bg-white mt-6">
+                                    <div class="comment-item m-6">
+                                        <div class="flex flex-row items-center">
+                                            <div class="">
+                                                <img src="./images/user-1.jpg" class="rounded-full">
+                                            </div>
+                                            <div class="ml-4">
+                                                <span class="text-xs font-bold">AMANDA NORTON<br>
+                                                    <span class="text-gray-500">4 HOURS AGO</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-6">
+                                            <span class="text-sm text-gray-400 text-justify">I am not really a big fan of basketball but even I am sure that Rockets are going to make it this time just like they did 3 years...</span>
+                                        </div>
+                                        <div class="mt-6 flex flex-row w-72">
+                                            <i class="bi bi-arrow-return-right text-gray-500 mx-4 text-3xl"></i> 
+                                            <a href="">
+                                                <span class="text-sm text-blue-500 hover:text-blue-700">Six Big Questions for the Spurs-Rockets Heavyweight Clash</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="comment-items border bg-white">
+                                    <div class="comment-item m-6">
+                                        <div class="flex flex-row items-center">
+                                            <div class="">
+                                                <img src="./images/user-2.jpg" class="rounded-full">
+                                            </div>
+                                            <div class="ml-4">
+                                                <span class="text-xs font-bold">ROBERT NORTON<br>
+                                                    <span class="text-gray-500">14 HOURS AGO</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-6">
+                                            <span class="text-sm text-gray-400">Bulls are my personal favorites, and I don’t...</span>
+                                        </div>
+                                        <div class="mt-6 flex flex-row w-72">
+                                            <i class="bi bi-arrow-return-right text-gray-500 mx-4 text-3xl"></i> 
+                                            <a href="">
+                                                <span class="text-sm text-blue-500 hover:text-blue-700">Which Team will Win the World Championship Series This Year ?</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="comment-items border bg-white">
+                                    <div class="comment-item m-6">
+                                        <div class="flex flex-row items-center">
+                                            <div class="">
+                                                <img src="./images/user-3.jpg" class="rounded-full">
+                                            </div>
+                                            <div class="ml-4">
+                                                <span class="text-xs font-bold">REBECCA SMITH<br>
+                                                    <span class="text-gray-500">21 HOURS AGO</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-6">
+                                            <span class="text-sm text-gray-400 text-justify">My opinion on the topic is that Spurs don’t have enough chances to withstand the...</span>
+                                        </div>
+                                        <div class="mt-6 flex flex-row w-72">
+                                            <i class="bi bi-arrow-return-right text-gray-500 mx-4 text-3xl"></i> 
+                                            <a href="">
+                                                <span class="text-sm text-blue-500 hover:text-blue-700">Six Big Questions for the Spurs-Rockets Heavyweight Clash</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Join -->
+                        <div class="join mt-4">
+                            <div class="join-content">
+                                <div class="join-items.">
+                                    <div class="bg-gray-100 flex flex-row justify-between py-4 border-b border-gray-400">
+                                        <div class="flex flex-row">
+                                            <div class="border-l-4 border-blue-500 px-2"></div>
+                                            <span class="text-xl font-bold text-gray-800">JOIN OUR NEWSLETTER</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="join-items mt-2">
+                                    <form class="">
+                                        <input class="w-full mt-6 py-4 text-center border-gray-400 rounded" type="email" placeholder="Enter Your Email!">
+                                        <a href="#">
+                                            <div class="mt-4 p-4 text-center bg-blue-500 hover:bg-yellow-400 rounded">
+                                                <span class="text-sm px-24 p-4 text-white font-bold hover:text-gray-800">SUBSCRIBE</span>
+                                            </div>
+                                        </a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer flex justify-center items-center bg-gray-900 py-8 overflow-hidden">
+            <div class="footer-content flex flex-row w-11/12">
+                <!-- 1 -->
+                <div class="footer-items w-6/12">
+                    <div class="footer-item flex flex-row">
+                        <img src="./images/logo-footer.png" class="footer-img w-32">
+                        <span class="footer-item-text text-sm text-gray-400 ml-4 w-64 text-justify">Dragons provides extensive information on everything concerning our basketball team for fans all over the world.</span>
+                    </div>
+                    <div class="footer-item flex flex-row items-center mt-8">
+                        <div class="footer-getintouch m-2">
+                            <span class="text-gray-100 text-xs font-bold border-2 border-gray-200 px-8 py-3 rounded">GET IN TOUCH</span>
+                        </div>
+                        <div class="footer-icon flex flex-row">
+                            <div class="m-1 bg-gray-700 px-3 py-2 rounded">
+                                <i class="bi bi-facebook text-md text-gray-200"></i>
+                            </div>
+                            <div class="m-1 bg-gray-700 px-3 py-2 rounded">
+                                <i class="bi bi-twitter text-md text-gray-200"></i>
+                            </div>
+                            <div class="m-1 bg-gray-700 px-3 py-2 rounded">
+                                <i class="bi bi-google text-md text-gray-200"></i>
+                            </div>
+                            <div class="m-1 bg-gray-700 px-3 py-2 rounded">
+                                <i class="bi bi-instagram text-md text-gray-200"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="footer-items w-3/12">
+                    <div class="footer-item2 flex flex-col">
+                        <span class="my-2 text-xl text-gray-100 font-bold"><span class="py-2 border-b border-yellow-400">LATEST</span> NEWS</span>
+                        <span class="mt-4 text-sm text-gray-100 font-bold">WHICH TEAM WILL WIN THE WORLD CHAMPIONSHIP SERIES THIS YEAR?</span>
+                        <span class="py-4 text-xs font-bold text-gray-500 border-b border-gray-500">
+                            <i class="bi bi-clock-history text-xl text-gray-500 m-2"></i>APRIL 15, 2022</span>
+                        <span class="text-sm text-gray-100 font-bold py-3">AFTER SEVEN DAYS OFF, LEBRON JAMES AND CAVS ROUT RAPTORS</span>
+                        <span class="my-2 text-xs font-bold text-gray-500">
+                            <i class="bi bi-clock-history text-xl text-gray-500 m-2"></i>APRIL 15, 2022</span>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="footer-items w-3/12">
+                    <div class="footer-item2 flex flex-col px-12">
+                        <span class="my-2 text-xl text-gray-100 font-bold"><span class="py-2 border-b border-yellow-400">CONTACT</span> US</span>
+                        <div class="flex flex-row items-center my-4">
+                            <i class="bi bi-people-fill text-4xl text-gray-500 "></i> 
+                            <span class="text-gray-100 ml-4">
+                                <span class="text-sm text-gray-500 font-bold">JOIN OUR TEAM</span><br>
+                               info@demolink.org
+                            </span>
+                        </div>
+                        <div class="flex flex-row items-center my-4">
+                            <i class="bi bi-envelope-paper text-4xl text-gray-500 "></i></i>
+                            <span class="text-gray-100 ml-4">
+                                <span class="text-gray-500 font-bold">CONTACT US</span><br>
+                               info@demolink.org
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </secttion>
+    <script src="../path/to/flowbite/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

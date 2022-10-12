@@ -1,0 +1,152 @@
+@media (min-width: 320px) and (max-width: 768px){
+    /* menu */
+    .header .head-items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 20px
+    }
+    .header .head-item{
+        width: 100%;
+        text-align: left;
+    }
+    .header .head-item-2,
+    .header .head-item-3{
+        display: none!important;
+    }
+    .header .close-button{
+        display: block!important;
+    }
+    .content .content-right{
+        width: 100%;
+        margin: 0 ;
+        padding: 15px;
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    
+    /* the league1 */
+    .content .content-items .content-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .content .league .league-top{
+        margin: 15px;
+    }
+    .content .league .league-under-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* the team 1 */
+    .content .team-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .content .team-items {
+        width: 100%;
+    }
+    .content .league-top{
+        margin: 15px;
+    }
+    .content .league-mid {
+        width: 90%;
+        margin: auto;
+    }
+    .content .league-image{
+        width: 100%;
+        margin: auto;
+    }
+    .content .league-under-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* trending */
+    
+    .content .trending-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .content .trending-items{
+        width: 100%;
+    }
+    .content .trending-mid-2{
+        padding: 15px;
+    }
+    .content .trending-under-content{
+        display: flex;
+        flex-direction: row;
+    }
+    .content .trending-items-lefts {
+        width: 100%;
+    }
+    .content .trending-items-left {
+        margin: 10px 0;
+    }
+    .content .trending-under-content{
+        display: flex;
+        flex-direction: row;
+    }
+    /* trending-2 */
+    .content .trending-2-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .content .trending-2-items{
+        width: 100%;
+    }
+    .content .trending-2-mid{
+        padding: 15px;
+    }
+    .content .trending-2-under-content{
+        display: flex;
+        flex-direction: row;
+    }
+    .content .trending-2-items-lefts {
+        width: 100%;
+    }
+    .content .trending-2-items-left {
+        margin: 10px 0;
+    }
+    .content .trending-2-under-content{
+        display: flex;
+        flex-direction: row;
+    }
+    /* ================== */
+    /* left */
+    .content .content-left{
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+    }
+    /* footer */
+    .footer .footer-content{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .footer-items{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .footer .footer-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .footer-item-text{
+        margin-top: 20px;
+    }
+    .footer .footer-icon{
+        margin-top: 20px;
+    }
+    .footer .footer-item2{
+        padding: 0;
+    }
+} 
